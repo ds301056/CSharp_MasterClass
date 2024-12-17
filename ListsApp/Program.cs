@@ -23,12 +23,29 @@ namespace ListsApp
 			// Add another product to the list using the Add() method
 			products.Add(new Product { Name = "Berries", Price = 2.99 });
 
+
+
+			// Returns a list called cheapProducts with a price less than 1.00
+			List<Product> cheapProducts = products.Where(p => p.Price < 1.00).ToList();
+
+
+
 			// Display the products in the list
 			Console.WriteLine("Available products:");
 			foreach (Product product in products)
 			{
 				Console.WriteLine($"Product: {product.Name}, Price: {product.Price}");
 			}
+
+			Console.WriteLine(); // Add a new line for spacing
+
+			// print out cheap products list
+			Console.WriteLine("Available products for less than $1: ");
+			foreach (Product product in cheapProducts)
+			{
+				Console.WriteLine($"Product: {product.Name}, Price: {product.Price}");
+			}  
+
 
 			Console.ReadKey();
 		}
