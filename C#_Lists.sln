@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayLists", "ArrayLists\Ar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTables_and_Dictionaries", "HashTables_and_Dictionaries\HashTables_and_Dictionaries.csproj", "{F9A23E23-0AEE-4F0A-B90D-FC121467031C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nullables", "nullables\nullables.csproj", "{D16C5D06-311E-42EC-A894-FE4BBB0C6AFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{F9A23E23-0AEE-4F0A-B90D-FC121467031C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9A23E23-0AEE-4F0A-B90D-FC121467031C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9A23E23-0AEE-4F0A-B90D-FC121467031C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D16C5D06-311E-42EC-A894-FE4BBB0C6AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D16C5D06-311E-42EC-A894-FE4BBB0C6AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D16C5D06-311E-42EC-A894-FE4BBB0C6AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D16C5D06-311E-42EC-A894-FE4BBB0C6AFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
