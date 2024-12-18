@@ -24,8 +24,9 @@ namespace ArrayListC
 			myArrayList.Add(3.14);
 			myArrayList.Add(13);
 			myArrayList.Add(25.3);
-			myArrayList.Add(true);
+			myArrayList.Add(false);
 			myArrayList.Add(13);
+			myArrayList.Add(true);
 
 			// display the list 
 			foreach (var item in myArrayList)
@@ -54,6 +55,44 @@ namespace ArrayListC
 			{
 				Console.WriteLine(item);
 			}
+
+			Console.WriteLine();
+			Console.WriteLine("Object Summary: \n");
+			double sum = 0;
+			foreach (object obj in myArrayList)
+			{
+				if (obj is int)
+				{
+					sum += Convert.ToDouble(obj); // convert to double
+				}
+				else if (obj is double)
+				{
+					sum += (double)obj; // cast to double & add to sum
+				}
+				else if (obj is string)
+				{
+					Console.WriteLine("String: " + (string)obj);
+				}
+				else if (obj is bool)
+				{
+					Console.WriteLine("Boolean: " + (bool)obj);
+				}
+
+			}
+
+			Console.WriteLine("Results: \n");
+			Console.WriteLine(sum);
+
+			Console.WriteLine("full list: \n");
+			foreach (var item in myArrayList)
+			{
+				Console.WriteLine(item);
+			}
+
+
+
+
+			Console.ReadKey();
 
 		}
 	}
