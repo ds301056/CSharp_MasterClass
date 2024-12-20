@@ -6,10 +6,23 @@
 		{
 
 			int? age = null; // int? is shorthand for Nullable<int>
+			int myAge = 35;
 
-			if(age.HasValue) age = age.Value;
+			if (age.HasValue)
+			{
+				int sum = age.Value + myAge;
+				Console.WriteLine("Age is: " + sum);
+			}
+			else
+			{
+				
 
-			Console.ReadKey();
+				Console.WriteLine("Age is not set");
+
+			}
+
+
+				Console.ReadKey();
 		}
 
 	}
